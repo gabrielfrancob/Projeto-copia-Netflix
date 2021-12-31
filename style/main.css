@@ -1,0 +1,136 @@
+
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* Base */
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+
+header .container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo{
+    font-family: 'Arial Black';
+    font-size: 2.0em;
+    color: var(--vermelho);
+    margin-left: 20px;
+}
+
+header .container .menu-responsivo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+header .container .menu-responsivo{
+    cursor: pointer;
+}
+
+header .container .menu-responsivo span{
+    display: none;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20%;
+}
+
+header nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    transition: all 400ms;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header nav a:active{
+    color: #e6e6e6;
+}
+
+/* Principal */
+
+.filme-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size: 1.2em;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/resources/interestelar.jpg');
+    background-size: cover;
+    background-position: center  center;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.filme-principal .titulo{
+    margin-top: 10%;
+    font-size: 1.9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.397) ;
+    color: whitesmoke;
+    padding: 13px;
+    margin-right: 20px;
+    transition: 300ms ease all;
+}
+
+.filme-principal .botao:hover{
+    background-color: rgba(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.filme-principal .botao:active{
+    background-color: rgb(180, 180, 180);
+}
+
+.filme-principal .botao i{
+    margin-left: 5px;
+}
+
+.filme-principal .container{
+    width: 60%;
+    margin-left: 30px;
+}
+
+.caixa-filme{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.caixa-filme:hover{
+    cursor: pointer;
+}
